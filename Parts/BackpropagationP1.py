@@ -1,5 +1,3 @@
-import numpy as np
-
 x = [1.0, -2.0, 3.0] #inputs 
 w = [-4.0, -2.5, 1.0] #weights for inputs
 b = 1.0 #bias for neuron
