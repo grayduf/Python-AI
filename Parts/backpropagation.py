@@ -51,3 +51,12 @@ drelu_dx2 = drelu_dxw2 * dmul_dx2
 drelu_dw2 = drelu_dxw2 * dmul_dw2
 print(drelu_dx0, drelu_dw0, drelu_dx1, drelu_dw1, drelu_dx2, drelu_dw2)
 
+# way to sum up everything all the way in one function
+# drelu_dx0 = dvalue * (1. if z > 0 else 0.) * w[0]
+
+dx = [drelu_dx0, drelu_dx1, drelu_dx2] #gradients on inputs
+dw = [drelu_dw0, drelu_dw1, drelu_dw2] #gradients on weights
+db = drelu_db #gradient on bias (only one since its just one neuron)
+
+
+
